@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cairo: 'Cairo', system-ui, sans-serif;
+    --font-amiri: 'Amiri', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-serif: 'Playfair Display', serif;
+  }
+
+  body {
+    font-family: var(--font-cairo), var(--font-sans);
+    background-color: #FAF7F2;
+    color: #1F2923;
+    overflow-x: hidden;
+  }
+
+  /* When English is selected, body uses Plus Jakarta Sans */
+  [dir="ltr"] body, [dir="ltr"] {
+    font-family: var(--font-sans);
+  }
+
+  /* Amiri for poetic Arabic calligraphy and headlines */
+  .font-amiri {
+    font-family: var(--font-amiri);
+  }
+
+  .font-cairo {
+    font-family: var(--font-cairo);
+  }
+
+  .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom smooth scrollbar in warm geometric earth tones */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3ECE1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C8BEAF;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E3F2D;
+}
+
+/* Geometric Grid & Architectural Texture Overlays */
+.bg-geometric-grid {
+  background-color: #FAF7F2;
+  background-image: 
+    linear-gradient(to right, rgba(30, 63, 45, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 63, 45, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-geometric-dots {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#D5C9B8 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-kraft-texture {
+  background-color: #F7F2E8;
+  background-image: radial-gradient(#D9CEBF 0.8px, transparent 0.8px), radial-gradient(#D9CEBF 0.8px, #F7F2E8 0.8px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.bg-botanical-pattern {
+  background-color: #FAF7F2;
+  background-image: 
+    linear-gradient(to right, rgba(30, 63, 45, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 63, 45, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
